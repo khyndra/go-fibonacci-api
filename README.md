@@ -23,23 +23,21 @@ git clone https://github.com/yourusername/fibonacci-api.git
 cd fibonacci-api
 ```
 
-
-
 ## API Usage
 
 ### Sum
 
 Request
+
 ```bash
 GET /fibonacci?n=10
 ```
 
 Response
+
 ```bash
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 ```
-
-
 
 ---
 
@@ -57,7 +55,6 @@ Response
 ```bash
 go mod init go-fibonacci-api
 ```
-
 
 ### 2. Build Application
 
@@ -84,13 +81,13 @@ go test
 ### 1. Build docker image
 
 ```bash
-docker build -t <username>/go-fibonacci-api .
+docker build -t <username>/go-fibonacci-api:v1.0.0  .
 ```
 
 ### 2. Run docker image
 
 ```bash
-docker run -p 8080:8080 <username>/go-fibonacci-api
+docker run -p 8080:8080 <username>/go-fibonacci-api:v1.0.0
 ```
 
 ### 3. Login into Docker
@@ -102,5 +99,5 @@ docker login
 ### 4. Push Docker Image
 
 ```bash
-docker push <username>/go-fibonacci-api
+docker push <username>/go-fibonacci-api:v1.0.0
 ```
