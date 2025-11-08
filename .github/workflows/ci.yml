@@ -53,7 +53,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build Docker image
+      - name: Build Docker image1
         run: docker build -t $IMAGE_NAME:${{ steps.vars.outputs.SHORT_SHA }} .
 
       - name: Push Docker image
