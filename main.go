@@ -14,7 +14,7 @@ var (
 )
 
 func init() {
-	logLevel := os.Getenv("LOG_LEVEL")
+
 	infoLogger = log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
 	errorLogger = log.New(os.Stderr, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
 }
